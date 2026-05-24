@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barghah — We Build Digital Legends</title>
+<meta name="description" content="Barghah is a digital agency for brands that refuse to be ordinary. Brand, web, product, growth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+
+<!-- Scroll progress -->
+<div id="scrollBar"></div>
+
+<!-- Canvas background -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- Ambient orbs -->
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="preloader__count" id="preCount">0</div>
+  <div class="preloader__bar"><div class="preloader__fill" id="preFill"></div></div>
+  <div class="preloader__word" id="preWord">BARGHAH</div>
+</div>
+
+<!-- CURSOR -->
+<div class="cur" id="cur"></div>
+<div class="cur-text" id="curText"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav__logo" id="navLogo">BARGHAH<span>·</span></a>
+  <div class="nav__center" id="navCenter">
+    <a href="#about" class="nav__a">About</a>
+    <a href="#services" class="nav__a">Services</a>
+    <a href="#portfolio" class="nav__a">Projects</a>
+    <a href="#contact" class="nav__a">Contact</a>
+  </div>
+  <a href="#contact" class="nav__cta" id="navCta">Start a project ↗</a>
+  <button class="nav__burger" id="navBurger" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a href="#about"   class="mob-menu__a" id="mm1">About</a>
+  <a href="#services" class="mob-menu__a" id="mm2">Services</a>
+  <a href="#portfolio" class="mob-menu__a" id="mm3">Projects</a>
+  <a href="#contact"  class="mob-menu__a" id="mm4">Contact</a>
+  <a href="#contact" class="mob-menu__cta">Start a project ↗</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero__top">
+    <p class="hero__kicker">Digital Agency — Est. 2019</p>
+  </div>
+  <div class="hero__titles">
+    <div class="hero__row clip-row"><span>We build</span></div>
+    <div class="hero__row hero__row--fire clip-row"><span>digital</span></div>
+    <div class="hero__row clip-row"><span>legends.</span></div>
+  </div>
+  <div class="hero__bottom">
+    <p class="hero__desc">For brands that refuse to be ordinary. Strategy, design, and engineering — executed without compromise, delivered on time.</p>
+    <div class="hero__actions">
+      <a href="#portfolio" class="link-arrow">See our work <span>→</span></a>
+      <a href="#contact" class="btn-fire">Start a project</a>
+    </div>
+  </div>
+  <div class="hero__scroll-cue" id="scrollCue">Scroll</div>
+  <div class="hero__ticker-wrap">
+    <div class="hero__ticker">
+      <span>Brand Identity</span><span class="sep">✦</span>
+      <span>Web Experiences</span><span class="sep">✦</span>
+      <span>Mobile Apps</span><span class="sep">✦</span>
+      <span>Product Design</span><span class="sep">✦</span>
+      <span>Growth Strategy</span><span class="sep">✦</span>
+      <span>AI Integration</span><span class="sep">✦</span>
+      <span>Brand Identity</span><span class="sep">✦</span>
+      <span>Web Experiences</span><span class="sep">✦</span>
+      <span>Mobile Apps</span><span class="sep">✦</span>
+      <span>Product Design</span><span class="sep">✦</span>
+      <span>Growth Strategy</span><span class="sep">✦</span>
+      <span>AI Integration</span><span class="sep">✦</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="g">
+    <div class="about__tag tag" data-reveal><span>01 / About</span></div>
+    <h2 class="display about__h2" data-split>Not an agency. An obsession.</h2>
+    <div class="about__cols">
+      <p>Barghah was built by designers, engineers, and strategists who got restless in agencies that valued throughput over craft. We left. We built something better.</p>
+      <p>We take on a curated number of projects each year. Every client gets senior talent on every deliverable — not juniors learning on your budget. We treat every project like it's our own company on the line.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section services">
+  <div class="g">
+    <div class="services__head">
+      <div class="tag" data-reveal><span>02 / Services</span></div>
+      <h2 class="display" data-split>What we do.</h2>
+    </div>
+    <ul class="srv-list">
+      <li class="srv-item">
+        <div class="srv-item__header">
+          <div class="srv-item__left">
+            <span class="srv-item__n">01</span>
+            <h3 class="srv-item__title">Web Development</h3>
+          </div>
+        </div>
+        <div class="srv-item__body">
+          <p>Award-winning, performance-obsessed websites and web apps. Conversion-engineered by default.</p>
+        </div>
+      </li>
+      <li class="srv-item">
+        <div class="srv-item__header">
+          <div class="srv-item__left">
+            <span class="srv-item__n">02</span>
+            <h3 class="srv-item__title">Mobile App Development</h3>
+          </div>
+        </div>
+        <div class="srv-item__body">
+          <p>Native and cross-platform apps — fluid animations, offline capability, enterprise-grade security architecture.</p>
+        </div>
+      </li>
+      <li class="srv-item">
+        <div class="srv-item__header">
+          <div class="srv-item__left">
+            <span class="srv-item__n">03</span>
+            <h3 class="srv-item__title">AI Integration</h3>
+          </div>
+        </div>
+        <div class="srv-item__body">
+          <p>Intelligent automation, recommendation engines, and predictive analytics integrated to create real business impact.</p>
+        </div>
+      </li>
+      <li class="srv-item">
+        <div class="srv-item__header">
+          <div class="srv-item__left">
+            <span class="srv-item__n">04</span>
+            <h3 class="srv-item__title">AI Automations</h3>
+          </div>
+        </div>
+        <div class="srv-item__body">
+          <p>Custom workflow automation, voice agents, intelligent assistants, and LLM-powered internal tools to scale operations.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section portfolio">
+  <div class="g">
+    <div class="tag" data-reveal><span>03 / Projects</span></div>
+    <h2 class="display" data-split>Projects.</h2>
+  </div>
+  <!-- Floating image preview -->
+  <div class="work-preview" id="workPreview">
+    <div class="work-preview__img" id="workPreviewImg"></div>
+  </div>
+  <div class="g">
+    <ul class="work-list">
+      <li class="work-item" data-work data-color="#001808" data-preview="work1">
+        <a href="https://github.com/sabithh/SmartResumeRanker" target="_blank" style="display:flex; width:100%; justify-content:space-between; align-items:center; color:inherit; text-decoration:none;">
+          <div class="work-item__left">
+            <span class="work-item__n">01</span>
+            <div>
+              <h3 class="work-item__title">SmartResumeRanker</h3>
+              <p class="work-item__sub">Python · AI Resume Parser &amp; Job Scorer</p>
+            </div>
+          </div>
+          <span class="work-item__stat">AI Suitability Ranker</span>
+          <span class="work-item__arrow">↗</span>
+        </a>
+      </li>
+      <li class="work-item" data-work data-color="#001525" data-preview="work2">
+        <a href="https://github.com/sabithh/bakery_ai_manager" target="_blank" style="display:flex; width:100%; justify-content:space-between; align-items:center; color:inherit; text-decoration:none;">
+          <div class="work-item__left">
+            <span class="work-item__n">02</span>
+            <div>
+              <h3 class="work-item__title">bakery_ai_manager</h3>
+              <p class="work-item__sub">Dart / Flutter · Automated Inventory Dashboard</p>
+            </div>
+          </div>
+          <span class="work-item__stat">Automated tracking system</span>
+          <span class="work-item__arrow">↗</span>
+        </a>
+      </li>
+      <li class="work-item" data-work data-color="#250a00" data-preview="work3">
+        <a href="https://github.com/sabithh/resq_mini" target="_blank" style="display:flex; width:100%; justify-content:space-between; align-items:center; color:inherit; text-decoration:none;">
+          <div class="work-item__left">
+            <span class="work-item__n">03</span>
+            <div>
+              <h3 class="work-item__title">resq_mini</h3>
+              <p class="work-item__sub">Python · Disaster &amp; Rescue Coordination System</p>
+            </div>
+          </div>
+          <span class="work-item__stat">Incident rescue response</span>
+          <span class="work-item__arrow">↗</span>
+        </a>
+      </li>
+      <li class="work-item" data-work data-color="#0d0025" data-preview="work4">
+        <a href="https://github.com/sabithh/Toolsy" target="_blank" style="display:flex; width:100%; justify-content:space-between; align-items:center; color:inherit; text-decoration:none;">
+          <div class="work-item__left">
+            <span class="work-item__n">04</span>
+            <div>
+              <h3 class="work-item__title">Toolsy</h3>
+              <p class="work-item__sub">Python · Developer CLI Utility Toolkit</p>
+            </div>
+          </div>
+          <span class="work-item__stat">Developer productivity suite</span>
+          <span class="work-item__arrow">↗</span>
+        </a>
+      </li>
+      <li class="work-item" data-work data-color="#200028" data-preview="work5">
+        <a href="https://github.com/sabithh/hellopeople2.0" target="_blank" style="display:flex; width:100%; justify-content:space-between; align-items:center; color:inherit; text-decoration:none;">
+          <div class="work-item__left">
+            <span class="work-item__n">05</span>
+            <div>
+              <h3 class="work-item__title">hellopeople2.0</h3>
+              <p class="work-item__sub">Python · Social Landing &amp; Template</p>
+            </div>
+          </div>
+          <span class="work-item__stat">Interactive communication UI</span>
+          <span class="work-item__arrow">↗</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section testi-section">
+  <div class="g">
+    <div class="tag" data-reveal><span>04 / Clients</span></div>
+    <div class="testi-carousel" id="testiCarousel">
+      <blockquote class="testi active">
+        <p>"Barghah didn't just redesign our brand — they redefined how the market perceives us. Inbound leads tripled within six months of launch. The best agency we've ever worked with."</p>
+        <cite>Rajiv Krishnan — CEO, Aureum Capital</cite>
+      </blockquote>
+      <blockquote class="testi">
+        <p>"The level of detail is almost unreasonable — and I mean that as the highest compliment. They caught inconsistencies in our own guidelines we'd missed for years. The result was flawless."</p>
+        <cite>Sofia Martinez — CMO, Maison Noire</cite>
+      </blockquote>
+      <blockquote class="testi">
+        <p>"We came with a napkin sketch and left with a funded product. Investors commented specifically on product quality during our Series B pitch. Barghah moved a needle agencies usually can't touch."</p>
+        <cite>Aaron Walsh — Founder, Nexus Protocol</cite>
+      </blockquote>
+    </div>
+    <div class="testi-controls">
+      <button id="tPrev">←</button>
+      <div class="testi-prog"><div class="testi-prog__fill" id="testiProgFill"></div></div>
+      <button id="tNext">→</button>
+      <span class="testi-idx" id="testiIdx">01 / 03</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="g">
+    <div class="contact__top" data-reveal>
+      <div class="tag"><span>05 / Contact</span></div>
+      <h2 class="display" data-split>Let's build<br>something<br>legendary.</h2>
+    </div>
+    <div class="contact__body">
+      <div class="contact__left" data-reveal>
+        <a href="mailto:hello@barghah.com" class="contact__email scramble" data-text="hello@barghah.com">hello@barghah.com</a>
+        <div class="contact__meta">
+          <div><span>Phone</span><a href="tel:+917994235150">+91 79942 35150</a></div>
+          <div><span>Based in</span><span>Malappuram, Kerala, India</span></div>
+          <div><span>Response</span><span>Within 24 hours</span></div>
+        </div>
+      </div>
+      <form id="cForm" class="contact__form" data-reveal>
+        <div class="f-row">
+          <div class="f-g"><label>Name *</label><input type="text" name="name" required></div>
+          <div class="f-g"><label>Email *</label><input type="email" name="email" required></div>
+        </div>
+        <div class="f-row">
+          <div class="f-g"><label>Company</label><input type="text" name="company"></div>
+          <div class="f-g"><label>Budget</label>
+            <select name="budget"><option value="">Select...</option>
+              <option>₹3L – ₹10L</option><option>₹10L – ₹25L</option>
+              <option>₹25L – ₹50L</option><option>₹50L+</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-g f-full"><label>Project Brief *</label><textarea name="msg" rows="5" required></textarea></div>
+        <button type="submit" class="btn-fire btn-fire--full" id="fBtn">Send Inquiry →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__big scramble" data-text="BARGHAH">BARGHAH</div>
+  <div class="g">
+    <div class="footer__row">
+      <span>© 2026 Barghah. Kerala.</span>
+      <div class="footer__links">
+        <a href="#about">About</a><a href="#services">Services</a>
+        <a href="#portfolio">Projects</a><a href="#contact">Contact</a>
+      </div>
+      <span>Built with obsession.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
