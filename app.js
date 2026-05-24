@@ -235,7 +235,17 @@
         }
       });
     }, { threshold: 0.1 });
-    srvItems.forEach(el => srvObserver.observe(el));
+    srvItems.forEach(el => {
+      srvObserver.observe(el);
+      // Toggle active accordion class on click (for mobile/tap support)
+      el.addEventListener('click', () => {
+        const isActive = el.classList.contains('active');
+        srvItems.forEach(item => item.classList.remove('active'));
+        if (!isActive) {
+          el.classList.add('active');
+        }
+      });
+    });
 
     // ── Portfolio items — stagger slide up ────────
     const workObserver = new IntersectionObserver((entries) => {
